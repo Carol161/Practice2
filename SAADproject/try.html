@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Change Form</title>
+</head>
+<body>
+    <h1>Employee Change Form</h1>
+    <form action="process_employee_change.php" method="POST">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required><br>
+
+        <h2>Changes</h2>
+        <label for="job_title">New Job Title:</label>
+        <input type="text" id="job_title" name="job_title"><br><br>
+
+        <label for="department">New Department:</label>
+        <input type="text" id="department" name="department"><br><br>
+
+        <label for="salary">New Salary:</label>
+        <input type="number" id="salary" name="salary"><br><br>
+
+        <label for="contact">New Contact Information:</label>
+        <input type="text" id="contact" name="contact"><br><br>
+
+        <label for="tax_withholding">New Tax Withholding Info:</label>
+        <input type="text" id="tax_withholding" name="tax_withholding"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

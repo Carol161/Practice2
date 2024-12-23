@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Form</title>
+     <link rel="stylesheet" href="claimform.css">      
+</head>
+<body>
+    <header>
+    <h2>Part-Time Employee Claim Form</h2>
+    </header>
+    <div>
+        <form action="claimform.php" method="post">
+            <label for="date_of_service">Date of Service:</label>
+            <input type="date" id="date_of_service" name="date_of_service" required><br><br>
+            
+            <label for="type_of_service">Type of Service:</label>
+            <input type="text" id="type_of_service" name="type_of_service" required><br><br>
+            
+            <label for="start_time">Start Time:</label>
+            <input type="time" id="start_time" name="start_time" required><br><br>
+            
+            <label for="end_time">End Time:</label>
+            <input type="time" id="end_time" name="end_time" required><br><br>
+            
+            <label for="total_hours">Total Hours Worked:</label>
+            <input type="number" id="total_hours" name="total_hours" step="0.01" required><br><br>
+            
+            <!-- Manager's review and approval section -->
+            <label for="manager_name">Manager's Name:</label>
+            <input type="text" id="manager_name" name="manager_name"><br><br>
+            
+            <label for="approval_status">Approval Status:</label>
+            <select id="approval_status" name="approval_status">
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select><br><br>
+            
+            <label for="manager_comments">Manager's Comments:</label><br>
+            <textarea id="manager_comments" name="manager_comments"></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

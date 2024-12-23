@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+nav .search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+nav .account-cart a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ddd;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images maintain aspect ratio without stretching */
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ol {
+    list-style: none;
+}
+
+footer ol li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .logo {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product img {
+        width: 150px; /* Smaller image size for smaller screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .search-bar input {
+        width: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product img {
+        width: 120px; /* Smaller image size for small screens */
+        height: 120px;
+    }
+}

@@ -1,0 +1,71 @@
+<!--add boilerplate-->
+<!--the shortcut for commenting is CTRL+/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Card</title>
+    <link rel="stylesheet" href="ID.css">
+</head>
+<style>
+   img{
+    height: 200px;
+    width: 200px;
+   }
+
+
+    /* dealing with IDs */
+    #card{
+        background-color: green;
+        width: 400px;
+        margin: 20px;
+    }
+    #names{
+        padding: 2px; 
+        background-color: greenyellow;
+    }
+
+    #info{
+        background-color: goldenrod;
+    }
+
+    #footer{
+        background-color: bisque;
+    }
+</style>
+<body>
+    <!-- SELECTORS: Element, ID, Class -->
+    <div id="card">
+       <div id="heading">
+          <h1 style="color:blue;">Code Queen University</h1>
+          <h3 style="color: red;">We are the code stars</h3>
+       </div>
+
+         <div id="horizontal">
+             <div class="image">
+             <img id="photo"src="CAROL2.jpg" alt="carol's headshot photo">
+         </div>
+
+      <!-- div#names -->
+              <div id="names">
+                <p id="myName">Zawedde Carol</p>
+                <p>Software Engineer</p>
+              </div>
+       </div>
+
+           <div id="info">
+             <p>ID Number: 1000067890</p>
+             <P>Department: ICT</P>
+             <p class="clearance">Level of Clearance: 3</p>
+             <p id="date">Date Issued:05/11/2024</p>
+             <p>Date of Expiry: 04/11/2025</p>
+           </div> 
+
+          <div id="footer">
+            <p>2024 </p>
+          </div>
+
+    </div>
+</body>
+</html>

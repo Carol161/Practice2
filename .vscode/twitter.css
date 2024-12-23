@@ -1,0 +1,62 @@
+.mother{
+    height: 400px;
+    width: 800px;
+    background-color: aquamarine;
+    
+}
+.blue{
+    height: 400px;
+    width: 400px;
+    float: left;
+    background-color: blueviolet;
+    background-image: url(image1.jpg);
+}
+.white{
+    height: 400px;
+    width: 400px;
+    float: right;
+    background-color: greenyellow;
+}
+img{
+width: 100px;
+height: 100px;
+justify-content: center;
+padding-left: 150px;
+}
+.content{
+    padding-left: 20px;
+    background-color: bisque;
+    padding-top: 50px;
+}
+.content button{
+    border: white 1px sollid;
+    border-radius: 10px;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    border: solid 3px green;
+    width: 800px;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.box{
+    height: 50px;
+    background-color: blue;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+    flex-shrink: 0;
+}
+#box-1{
+    margin-right: auto;
+}
+
+

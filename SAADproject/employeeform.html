@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Employee Form</title>
+</head>
+<body>
+    <h2>New Employee Form</h2>
+    <form action="employeeform.php" method="post">
+        <fieldset>
+            <legend>Personal Details:</legend>
+            Name: <input type="text" name="name" required><br><br>
+            Address: <input type="text" name="address" required><br><br>
+            Contact Number: <input type="text" name="contact" required><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Employment Details:</legend>
+            Job Title: <input type="text" name="job_title" required><br><br>
+            Department: <input type="text" name="department" required><br><br>
+            Start Date: <input type="date" name="start_date" required><br><br>
+            Salary/Hourly Rate: <input type="text" name="salary" required><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Tax Information:</legend>
+            Tax Number: <input type="text" name="tax_number" required><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Bank Account Information:</legend>
+            Bank Name: <input type="text" name="bank_name" required><br><br>
+            Account Number: <input type="text" name="account_number" required><br><br>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

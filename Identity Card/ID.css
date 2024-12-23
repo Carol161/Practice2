@@ -1,0 +1,29 @@
+#horizontal{
+    display: flex;
+    justify-content: center;
+}
+#date{
+
+    font-weight: bold;
+}
+#photo{
+    border-radius: 50px;
+}
+#myName{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.image{
+    background-color: greenyellow;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+}
+#heading{
+    background-color: palegreen;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

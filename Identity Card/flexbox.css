@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    height: 800px;
+    align-items: center;
+    
+    justify-content: center;
+}
+.outer{
+    height:500px;
+    width: 500px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#box1{
+    height: 400px;
+    width: 200px;
+    background-color: antiquewhite;
+
+}
+#box2{
+    height: 400px;
+    width: 200px;
+    background-color: aqua;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="TASKS.css">
+</head>
+<body>
+
+<header>
+    <h1>Task Manager</h1>
+</header>
+
+<main>
+    <section id="task-form">
+        <h2>Add New Task</h2>
+        <form id="new-task-form">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" required>
+
+             <label for="task-name">Date:</label>
+            <input type="date" id="task-name" required>
+            
+            <label for="task-priority">Priority:</label>
+            <select id="task-priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            
+            <button type="Submit">Add task</button>
+        </form>
+    </section>
+
+    <section id="task-list">
+        <h2>Task List</h2>
+        <ul id="tasks">
+            <!-- Tasks will be added here dynamically -->
+             <option value="Sorting the hibiscus flowers"></option >
+             <li>Sorting the hibiscus flowers</li>
+             <li>Drying flowers</li>
+             <li>Grinding the flowers</li>
+             <li>Packing the podwer into the tins</li>
+             <li>Taking the finished products to the outlet </li>
+             <li>Cleaning the factory after the work</li>
+             <li>Sorting other seeds</li>
+             <li>Labelling the tins</li>
+
+        </ul>
+     
+    </select>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
